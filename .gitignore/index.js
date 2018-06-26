@@ -13,7 +13,13 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: 🐢help, Ping, Salut, Bye, Je suis ton Maître louanis.bot");
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#00DC0F')
+            .addField("Commandes du bot!", "    -🐢help : Affiche les commandes du bot!")
+            .addField("Interactions", "Ping, Salut, Bye, Que demande Manga.SAO?, Il se prendra quoi si il continue?, tais toi!")
+            .setFooter("C'est tout pour cet embed !")
+        message.channel.sendEmbed(help_embed)
+        console.log("commende help effectué")
     }
 
     if (message.content === "Salut"){
@@ -36,12 +42,12 @@ bot.on('message', message => {
         console.log("commande master effectué");
     }
 
-    if (message.content === "que demande Manga.SAO?"){
+    if (message.content === "Que demande Manga.SAO?"){
         message.reply("il demande de retrogader louanis mon maître qui m'a créé");
         console.log("commande Manga.SAO effectué");
     }
 
-    if (message.content === "il se prendra quoi si il continue?"){
+    if (message.content === "Il se prendra quoi si il continue?"){
         message.reply("un petit ban des familles");
         console.log("commande Manga.SAO2 effectué");
     }
