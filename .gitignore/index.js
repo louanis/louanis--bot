@@ -16,7 +16,7 @@ bot.on('message', message => {
         var help_embed = new Discord.RichEmbed()
             .setColor('#00DC0F')
             .addField("Commandes du bot!", "    -🐢help : Affiche les commandes du bot!")
-            .addField("Interactions", "Ping, Salut, Bye, Que demande Manga.SAO?, Il se prendra quoi si il continue?, tais toi!, Je suis ton Maître louanis.bot")
+            .addField("Interactions", "Ping, Salut, Bye, tais toi, Je suis ton Maître louanis.bot")
             .setFooter("C'est tout pour cet embed !")
         message.channel.sendEmbed(help_embed)
         console.log("commende help effectué")
