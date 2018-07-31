@@ -42,16 +42,6 @@ bot.on('message', message => {
         console.log("commande master effectué");
     }
 
-    if (message.content === "Que demande Manga.SAO?"){
-        message.reply("il demande de retrogader louanis mon maître qui m'a créé");
-        console.log("commande Manga.SAO effectué");
-    }
-
-    if (message.content === "Il se prendra quoi si il continue?"){
-        message.reply("un petit ban des familles");
-        console.log("commande Manga.SAO2 effectué");
-    }
-
     if (message.content === "la CIA t'as créé louanis bot ?"){
         message.reply("...non...c'est louanis qui m'a créé");
         console.log("commande easter egg effectué");
@@ -67,7 +57,7 @@ bot.on('message', message => {
         console.log("commande easter egg n°3 effectué");
     }
 
-    if (message.content === "tais toi!"){
+    if (message.content === "tais toi"){
         message.reply("tais toi toi même 😭 ");
         console.log("commande tais toi effectué");
     }
